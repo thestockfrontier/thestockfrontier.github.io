@@ -1,0 +1,58 @@
+/* Simple modern dark+accent theme */
+:root{
+  --bg:#0b0d10;--card:#0f1720;--muted:#9aa4ad;--accent:#ffd166;--accent2:#32d74b;
+  --white:#ffffff;--glass:rgba(255,255,255,0.04);
+  --container:1100px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#030405 0%,#071018 100%);color:var(--white);-webkit-font-smoothing:antialiased}
+.container{max-width:var(--container);margin:0 auto;padding:30px}
+.nav{background:transparent;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.03)}
+.nav .container{display:flex;align-items:center;gap:20px}
+.logo{font-weight:800;color:var(--accent);letter-spacing:1px}
+.menu{margin-left:auto;display:flex;gap:18px;align-items:center}
+.menu a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:6px}
+.menu a.active{color:var(--white);background:rgba(255,255,255,0.03)}
+.cta{margin-left:12px;background:var(--accent2);color:#03210a;padding:8px 12px;border-radius:6px;text-decoration:none;font-weight:700}
+.hero{padding:70px 0}
+.hero-inner{display:flex;gap:30px;align-items:stretch}
+.hero-text{flex:1}
+.hero h1{font-size:44px;margin:0 0 12px;color:var(--accent)}
+.lead{color:var(--muted);margin-bottom:14px}
+.price{font-size:28px;font-weight:700;margin-bottom:12px}
+.hero-ctas{display:flex;gap:12px;margin-bottom:12px}
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;color:var(--white);background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.03)}
+.btn.primary{background:linear-gradient(90deg,var(--accent),#ffb86b);color:#081219;border:none}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06)}
+.hero-box{width:320px}
+.course-card{background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+.course-title{font-weight:700;font-size:18px;margin-bottom:6px}
+.instructor{color:var(--muted);margin-bottom:10px}
+.pay{background:var(--accent2);color:#04180b;display:inline-block;padding:10px;border-radius:8px;text-decoration:none}
+.whatsapp{margin-top:8px;display:inline-block;background:transparent;border:1px solid rgba(255,255,255,0.06)}
+.highlights{margin-top:12px;color:var(--muted);list-style:none;padding:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.card{background:var(--glass);padding:16px;border-radius:8px}
+.why h2{color:var(--accent)}
+.reviews{margin-top:28px}
+.reviews-list{display:flex;flex-direction:column;gap:12px;margin-bottom:16px}
+.review{background:rgba(255,255,255,0.03);padding:12px;border-radius:8px}
+.review strong{display:block}
+.review-form input, .review-form textarea, .review-form select{width:100%;padding:10px;margin:8px 0;border-radius:6px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--white)}
+.review-form .row{display:flex;gap:8px;align-items:center}
+.review-form button{padding:10px 12px;border-radius:8px;background:var(--accent);color:#09131b;border:none}
+.faq{margin:30px 0}
+footer{padding:20px 0;background:transparent;border-top:1px solid rgba(255,255,255,0.03);color:var(--muted)}
+.course{display:flex;gap:20px;align-items:flex-start;margin:30px 0}
+.course-left{flex:1}
+.course-right{width:320px}
+.other-courses .small{grid-template-columns:repeat(3,1fr)}
+.contact-grid{display:grid;grid-template-columns:1fr 320px;gap:20px}
+.payments .pay-block{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;margin-bottom:12px}
+@media(max-width:900px){
+  .hero-inner{flex-direction:column}
+  .grid{grid-template-columns:1fr}
+  .menu{display:none}
+  .container{padding:16px}
+  .contact-grid{grid-template-columns:1fr}
+}
