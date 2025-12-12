@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — The Stock Frontier</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="container">
+    <div class="logo">THE STOCK FRONTIER</div>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <a class="cta" href="https://wa.me/917404276172" target="_blank">WhatsApp</a>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Contact</h1>
+  <p>Questions? Message us on WhatsApp or use the contact form.</p>
+
+  <div class="contact-grid">
+    <div>
+      <h3>Message</h3>
+      <form id="contact-form">
+        <input id="cname" placeholder="Your name" required />
+        <input id="cemail" placeholder="Email (optional)" />
+        <textarea id="cmsg" placeholder="Message" required></textarea>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </div>
+    <div>
+      <h3>Payment Methods</h3>
+      <p>Pay via UPI or Razorpay checkout. (Razorpay key must be added by admin)</p>
+      <div class="payments">
+        <div class="pay-block">
+          <h4>UPI (instant)</h4>
+          <p>UPI ID: <strong>thestockfrontier@upi</strong></p>
+          <p>Scan UPI or tap below on mobile:</p>
+          <a class="btn" href="upi://pay?pa=thestockfrontier@upi&pn=The+Stock+Frontier&am=13000" id="upi-pay">Pay with UPI</a>
+        </div>
+        <div class="pay-block">
+          <h4>Razorpay (card/UPI/netbanking)</h4>
+          <p>Click below to open secure checkout (admin must add key).</p>
+          <a class="btn" id="rzp-pay">Pay via Razorpay</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3>Address</h3>
+  <p>Online classes — Join from anywhere.</p>
+</main>
+
+<footer>
+  <div class="container">
+    <div>© 2025 The Stock Frontier</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
